@@ -36,7 +36,7 @@ class CheckoutForm extends Component {
     console.log("montant "+amount);
     let {token} = await this.props.stripe.createToken({name: `${email}`});
     console.log(token);
-    let response = await fetch("/charge", {
+    let response = await fetch("https://desolate-brushlands-51354.herokuapp.com/charge", {
       method: "POST",
       headers: {"Content-Type": "text/plain"},
       body: amount+'/'+token.id+'/'+email
