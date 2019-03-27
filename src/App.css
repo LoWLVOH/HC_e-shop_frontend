@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  min-height: 100vh;
+  background-image: url('./images/paper1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .App-logo {
@@ -9,8 +14,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /*background-color: #282c34;*/
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,3 +36,89 @@
     transform: rotate(360deg);
   }
 }
+
+.card-section {
+  /*background-image: url('./images/paper.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;*/
+  min-height: 100vh;
+}
+
+.container {
+  padding: 60px;
+  min-height: 80vh;
+}
+
+.row {
+  justify-content: space-around;
+  margin: 20px 0px;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  padding-top: 10px;
+}
+
+.navbar {
+  height: 10vh;
+}
+
+.link {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: darkcyan;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link-white {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link-white:hover {
+  color: darkcyan;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.carousel {
+  width: 100%;
+}
+
+.carouselTitle {
+  margin-bottom: 10vh;
+  color: #f8f9fa;
+}
+
+.amount-row {
+  display: flex;
+  width: 100%;
+  background-color: #f8f9fa;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.checkout-row {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.no-margin {
+  margin: 0px;
+}
+
